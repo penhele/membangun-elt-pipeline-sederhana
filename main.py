@@ -1,6 +1,6 @@
 from utils.extract import scrape_fashion
 from utils.transform import transform_to_DataFrame, transform_data
-from utils.load import store_to_postgre, store_to_csv, story_to_sheets
+from utils.load import store_to_postgre, store_to_csv, store_to_sheets
 
 def main():
     BASE_URL = 'https://fashion-studio.dicoding.dev/page{}'
@@ -15,7 +15,7 @@ def main():
             
             store_to_csv(DataFrame)
             store_to_postgre(DataFrame, db_url)
-            story_to_sheets(DataFrame)
+            store_to_sheets(DataFrame)
         except Exception as e:
             print(f"Terjadi kesalahan dalam proses: {e}")
     else:

@@ -21,7 +21,7 @@ def store_to_postgre(data, db_url):
     except Exception as e:
         print(f"Terjadi kesalahan saat menyimpan data: {e}")
     
-def story_to_sheets(data):
+def store_to_sheets(data):
     SERVICE_ACCOUNT_FILE = './google-sheets-api.json'
     
     SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
