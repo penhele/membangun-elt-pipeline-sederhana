@@ -39,6 +39,7 @@ def transform_data(data, exchange_rate):
         
         # Tranformasi Colors (menghapus kata 'Colors' dan spasi)
         data['Colors'] = data['Colors'].replace('Colors', '', regex=True).str.strip()
+        data['Colors'] = data['Colors'].astype('int64')
         
         # Tranformasi Size (menghapus kata 'Size:' dan spasi)
         data['Size'] = data['Size'].replace('Size:', '', regex=True).str.strip()

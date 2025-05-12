@@ -16,6 +16,13 @@ def main():
             store_to_csv(DataFrame)
             store_to_postgre(DataFrame, db_url)
             store_to_sheets(DataFrame)
+
+            print()
+            print('-' * 20)
+            print()
+
+            print(DataFrame.info())
+
         except Exception as e:
             print(f"Terjadi kesalahan dalam proses: {e}")
     else:

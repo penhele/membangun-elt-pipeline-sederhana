@@ -46,7 +46,7 @@ def store_to_sheets(data):
             body=body
         ).execute()
         
-        print("Data berhasil ditambahkan ke Google Sheets!")
+        print("Data berhasil ditambahkan ke Google Sheets! (https://docs.google.com/spreadsheets/d/1VnhY63XXDprPOX5g6m5VM7TFso1GLlavUmk-tqXdDOo/edit)")
     
     except Exception as e:
         print(f"Terjadi kesalahan saat menyimpan data: {e}")

@@ -4,7 +4,7 @@ from unittest.mock import patch, MagicMock
 from utils.load import store_to_csv, store_to_postgre, store_to_sheets
 
 
-class TestLoadFunctions(unittest.TestCase):
+class TestLoadF(unittest.TestCase):
     def setUp(self):
         self.data = pd.DataFrame({
             'name': ['Product A', 'Product B'],
