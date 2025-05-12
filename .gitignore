@@ -1,2 +1,10 @@
 /.env
+
+/.pytest_cache
 /google-sheets-api.json
+
+/utils/__pycache__
+/tests/__pycache__
+
+/htmlcov
+/.coverage

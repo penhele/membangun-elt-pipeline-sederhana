@@ -11,7 +11,7 @@ def main():
             DataFrame = transform_to_DataFrame(all_fashion_data)
             DataFrame = transform_data(DataFrame, 16000)
             
-            db_url = 'postgresql+psycopg2://postgres:stephen@localhost:5432/fashiondb'
+            db_url = 'postgresql+psycopg2://postgres:postgres@localhost:5432/fashiondb'
             
             store_to_csv(DataFrame)
             store_to_postgre(DataFrame, db_url)
